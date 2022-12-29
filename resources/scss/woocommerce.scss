@@ -1,0 +1,147 @@
+// *********************
+// WooCommerce
+// *********************
+table.shop_table {
+  a {
+    @apply bg-primary text-white px-4 py-2 rounded mr-2;
+  }
+}
+
+body main section div.woocommerce {
+  @apply flex flex-col lg:flex-row;
+}
+
+main section div.woocommerce {
+  @apply flex flex-wrap md:flex-nowrap;
+  // .woocommerce-MyAccount-content {
+  // }
+  .woocommerce-MyAccount-navigation {
+    @apply w-full lg:w-[350px] lg:pr-12;
+    min-width: 350px;
+    li.is-active a {
+      @apply text-white bg-primary;
+      &:hover {
+        @apply text-white bg-primary;
+      }
+    }
+    li a {
+      @apply rounded bg-gray-200;
+      display: block;
+      width: 100%;
+      padding: 1rem 0.5rem;
+      margin: 0.25rem 0;
+      &:hover {
+        @apply text-primary bg-gray-200;
+      }
+    }
+  }
+  .woocommerce-MyAccount-navigation-link {
+    @apply my-2 w-full;
+    &--dashboard a {
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f19d";
+        display: inline-block;
+        width: 1.8rem;
+        text-align: center;
+      }
+    }
+    &--orders a {
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f543";
+        display: inline-block;
+        width: 1.8rem;
+        text-align: center;
+      }
+    }
+    &--edit-account a {
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f4ff";
+        display: inline-block;
+        width: 1.8rem;
+        text-align: center;
+      }
+    }
+    &--subscriptions a {
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f815";
+        display: inline-block;
+        width: 1.8rem;
+        text-align: center;
+      }
+    }
+  }
+  .woocommerce-MyAccount-content {
+    @apply flex-grow;
+  }
+}
+
+table {
+  @apply table-auto;
+  // thead {
+  // }
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background: tint($primary, 90%);
+        border-radius: 20px !important;
+      }
+      td {
+        padding: 20px 40px !important;
+      }
+    }
+  }
+}
+
+table.shop_table.subscription_details {
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+table.shop_table.order_details {
+  width: 100%;
+  margin-bottom: 3em;
+  text-align: left;
+  tfoot {
+    td {
+      @apply px-10;
+    }
+    tr:first-of-type {
+      background: tint($primary, 90%);
+    }
+  }
+}
+
+table.shop_table.my_account_orders {
+  width: 100%;
+}
+
+table {
+  border-collapse: separate;
+}
+td {
+  border: solid 1px #eee;
+}
+tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+button.woocommerce-Button.button {
+  @apply inline-block mt-4 py-3 px-6 bg-primary text-white font-bold rounded-lg shadow-md;
+}

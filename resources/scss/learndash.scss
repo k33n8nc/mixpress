@@ -1,0 +1,209 @@
+// ****************************
+// Learndash focusmode header
+// ****************************
+.ld-focus-header {
+  .ld-user-menu {
+    // display: none !important;
+    .ld-text.ld-user-welcome-text,
+    .ld-profile-avatar,
+    .ld-user-menu-items {
+      display: none;
+    }
+  }
+}
+
+.learndash-wrapper .ld-focus .ld-focus-main .ld-focus-content h1 {
+  @apply text-primary;
+}
+
+.learndash-wrapper .ld-item-list {
+  .ld-section-heading h2 {
+    font-size: 1.25em !important;
+    @apply text-primary;
+  }
+}
+
+.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu {
+  display: flex;
+  flex: none !important;
+  padding: 0 1rem;
+}
+
+// ****************************
+// Learndash focusmode content breadcrumbs
+// ****************************
+.ld-focus-content {
+  .learndash-wrapper {
+    .learndash-wrapper {
+      .ld-breadcrumbs {
+        @apply py-4;
+        span {
+          a {
+            @apply font-normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ****************************
+// Course nav styling
+// ****************************
+a.ld-is-current-item {
+  .ld-topic-title {
+    font-weight: 700 !important;
+  }
+}
+
+.ld-topic-title {
+  font-size: 14px;
+}
+
+// ****************************
+// Lesvideo styling
+// ****************************
+.wp-block-lazyblock-lesvideo {
+  @apply mb-6;
+}
+
+.ld-focus-content {
+  p {
+  }
+  a {
+    @apply text-primary;
+  }
+}
+
+a.ld-button {
+  span.ld-text {
+    font-weight: 700;
+  }
+}
+
+.ld-content-actions {
+  .ld-content-action {
+    a.ld-course-step-back {
+      display: none !important;
+    }
+  }
+}
+
+.learndash-wrapper .ld-table-list {
+  .ld-table-list-header {
+    padding: 10px 20px 8px 20px !important;
+  }
+  /* .ld-table-list-footer {
+    padding: 1px !important;
+  } */
+}
+
+.ld-file-upload {
+  form.ld-file-upload-form {
+    input.ld-button {
+      border-radius: 3px !important;
+      margin-bottom: -13px !important;
+    }
+  }
+}
+
+.learndash-wrapper .ld-file-upload .ld-file-upload-form .ld-file-input + label {
+  /* border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important; */
+  border-radius: 3px !important;
+}
+
+.learndash-wrapper.learndash-widget {
+  .ld-progress.ld-progress-inline {
+    .ld-progress-bar {
+      height: 12px;
+      .ld-progress-bar-percentage {
+        height: inherit;
+      }
+    }
+    .ld-progress-heading {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      .ld-progress-stats {
+        .ld-progress-percentage {
+          width: 100%;
+        }
+        .ld-progress-steps {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+section.woocommerce-customer-details {
+  display: none;
+}
+
+.ld-section-heading {
+  .ld-item-list-actions {
+    .ld-expand-button {
+      @apply rounded text-sm py-2;
+    }
+  }
+}
+
+.learndash-wrapper {
+  .ld-lesson-status,
+  .ld-topic-status {
+    .ld-breadcrumbs {
+      @apply bg-blue-50 text-primary;
+      .ld-breadcrumbs-segments {
+        span {
+          &::after {
+            @apply mx-1 font-semibold;
+          }
+          a {
+            color: $secondary !important;
+          }
+        }
+      }
+      .ld-status {
+        margin: 0px;
+        background: $primary !important;
+        @apply text-xs font-normal normal-case
+          rounded-full;
+      }
+    }
+  }
+}
+
+.learndash-wrapper {
+  .ld-content-action {
+    input[type="submit"] {
+      @apply rounded font-normal;
+      line-height: 1;
+      &.learndash_mark_complete_button {
+        background: #019e7c;
+      }
+    }
+    a.ld-button {
+      @apply rounded;
+      span.ld-text {
+        @apply font-normal;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.learndash-wrapper
+  .ld-topic-list.ld-table-list
+  .ld-table-list-item
+  .ld-table-list-item-preview {
+  align-items: center !important;
+}
+
+.learndash-wrapper .ld-item-list-item-preview a.ld-item-name .ld-item-title {
+  margin-top: 5px;
+  span.ld-item-components {
+    // deze moet verdwijnen... doet niks...
+  }
+}
